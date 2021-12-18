@@ -14,14 +14,14 @@ class MyTestCase(unittest.IsolatedAsyncioTestCase):
     async def test_info(self):
         message = MagicMock()
         await info(message=message)
-        message.answer.assert_called_with('Я отправляю самые ожидаемые анонсы из мира кино, сериалов и аниме - '
+        message.reply.assert_called_with('Я отправляю самые ожидаемые анонсы из мира кино, сериалов и аниме - '
                                           'выбери, что тебя интересует. А ещё можешь подписаться на паблик, '
                                           'нажав кнопку nmp 🥺👉👈')
 
     async def test_unknown(self):
         message = MagicMock()
         await unknown(message=message)
-        message.answer.assert_called_with("Я даже не знаю, что и ответить... Может /info?")
+        message.reply.assert_called_with("Я даже не знаю, что и ответить... Может /info?")
 
 
 if __name__ == '__main__':
