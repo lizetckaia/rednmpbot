@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import MagicMock
-from bot import info, unknown
+from bot import info, unknown, start
 
 
 async def async_magic():
