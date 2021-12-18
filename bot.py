@@ -176,5 +176,6 @@ dispatcher.add_handler(keyboard_handler)
 dispatcher.add_handler(info_handler)
 dispatcher.add_handler(unknown_handler)
 
-updater.start_polling()
-updater.idle()
+if __name__ == '__main__':
+    updater.start_polling()
+    updater.idle()
