@@ -3,6 +3,13 @@ from bot import generate_keyboard, start, unknown, info
 
 
 class botTest(unittest.TestCase):
+    keyboard = [
+        ["Аниме"],
+        ["Фильм"],
+        ["Сериал"],
+        ["Nmp"],
+    ]
+
     def test_keyboard(self):
         self.assertNotEqual(generate_keyboard(), self.keyboard)
 
