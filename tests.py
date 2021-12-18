@@ -20,7 +20,7 @@ class MyTestCase(unittest.IsolatedAsyncioTestCase):
 
     async def test_unknown(self):
         message = MagicMock()
-        result = await info(message=message)
+        result = await unknown(message=message)
         message.answer.assert_called_with("Я даже не знаю, что и ответить... Может /info?")
 
 
