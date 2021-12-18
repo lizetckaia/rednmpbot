@@ -1,7 +1,7 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, Filters
 
-TOKEN = 'Введите токен своего бота'
+TOKEN = '123:123'
 updater = Updater(token=TOKEN)
 dispatcher = updater.dispatcher
 
